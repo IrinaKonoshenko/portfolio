@@ -65,14 +65,8 @@ body {
   transition: padding ease-in-out 0.3s;
 }
 
-.header-logo {
-}
-
 .header-logo-icon {
   fill: #34547a;
-}
-
-.header-menu {
 }
 
 .header-list {
@@ -124,6 +118,77 @@ body {
   line-height: 1.6;
   color: #727272;
 }
+
+.btn {
+  background-color: #34547a;
+  padding: 25px 41px;
+  color: #fff;
+  border: none;
+}
+
+.hero-btn {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.1em;
+  width: 225px;
+}
+
+.about-me {
+  padding-top: 119px;
+  background-color: #fff;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.18;
+  color: #000;
+}
+
+.about-me-description {
+  padding-top: 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 540px;
+  color: #727272;
+  text-align: center;
+}
+
+.numbers {
+  margin-top: 100px;
+  background-color: #34547a;
+}
+
+.number-list {
+  display: flex;
+  gap: 49px;
+  padding: 100px 0;
+  justify-content: center;
+}
+
+.number-item {
+  display: flex;
+  width: 141px;
+  gap: 20px;
+}
+
+.numbers-icon {
+  fill: #fff;
+}
+.item-number {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .skills-img {
   width: 300px;
   height: 250px;
