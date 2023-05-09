@@ -68,7 +68,7 @@
               вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов
               на латинице с начала XVI века.
             </div>
-            <button class="hero-btn btn">НАПИСАТЬ МНЕ</button>
+            <a href="#form" class="hero-btn btn link">НАПИСАТЬ МНЕ</a>
           </div>
         </div>
       </div>
@@ -174,6 +174,13 @@
           </div>
           <div class="my-works-video-block">
             <img class="my-works-video" src="./img/video.jpg" alt="video" />
+            <div class="my-works-play">
+              <img
+                class="my-works-play-btn"
+                src="./img/play-button.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -184,27 +191,67 @@
           <ul class="projects-list list">
             <li class="projects-item">
               <img class="projects-img" src="./img/1pic.jpg" alt="" />
+              <div class="projects-hover">
+                <svg width="100px" height="100px">
+                  <use href="./img/symbol-defs.svg#icon-eye"></use>
+                </svg>
+              </div>
             </li>
             <li class="projects-item">
               <img class="projects-img" src="./img/2pic.jpg" alt="" />
+              <div class="projects-hover">
+                <svg width="100px" height="100px">
+                  <use href="./img/symbol-defs.svg#icon-eye"></use>
+                </svg>
+              </div>
             </li>
             <li class="projects-item">
               <img class="projects-img" src="./img/1pic.jpg" alt="" />
+              <div class="projects-hover">
+                <svg width="100px" height="100px">
+                  <use href="./img/symbol-defs.svg#icon-eye"></use>
+                </svg>
+              </div>
             </li>
             <li class="projects-item">
               <img class="projects-img" src="./img/2pic.jpg" alt="" />
+              <div class="projects-hover">
+                <svg width="100px" height="100px">
+                  <use href="./img/symbol-defs.svg#icon-eye"></use>
+                </svg>
+              </div>
             </li>
             <li class="projects-item">
               <img class="projects-img" src="./img/2pic.jpg" alt="" />
+              <div class="projects-hover">
+                <svg width="100px" height="100px">
+                  <use href="./img/symbol-defs.svg#icon-eye"></use>
+                </svg>
+              </div>
             </li>
             <li class="projects-item">
               <img class="projects-img" src="./img/1pic.jpg" alt="" />
+              <div class="projects-hover">
+                <svg width="100px" height="100px">
+                  <use href="./img/symbol-defs.svg#icon-eye"></use>
+                </svg>
+              </div>
             </li>
             <li class="projects-item">
               <img class="projects-img" src="./img/2pic.jpg" alt="" />
+              <div class="projects-hover">
+                <svg width="100px" height="100px">
+                  <use href="./img/symbol-defs.svg#icon-eye"></use>
+                </svg>
+              </div>
             </li>
             <li class="projects-item">
               <img class="projects-img" src="./img/1pic.jpg" alt="" />
+              <div class="projects-hover">
+                <svg width="100px" height="100px">
+                  <use href="./img/symbol-defs.svg#icon-eye"></use>
+                </svg>
+              </div>
             </li>
           </ul>
         </div>
@@ -240,24 +287,33 @@
             латинице с начала XVI века.
           </div>
           <form action="" class="form-content">
-            <input
-              type="text"
-              class="form-input input-left"
-              placeholder="Ваше имя"
-            />
-            <input
-              type="text"
-              class="form-input input-right"
-              placeholder="Ваш e-mail"
-            />
-            <textarea
-              class="form-textarea"
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Сообщение"
-            ></textarea>
+            <div class="form-double">
+              <div class="form-input-wrapper">
+                <input
+                  type="text"
+                  class="form-input input-left"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="form-input-wrapper">
+                <input
+                  type="text"
+                  class="form-input input-right"
+                  placeholder="Ваш e-mail"
+                />
+              </div>
+            </div>
+
+            <div class="form-input-wrapper">
+              <textarea
+                class="form-textarea"
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Сообщение"
+              ></textarea>
+            </div>
             <button class="form-btn btn">ОТПРАВИТЬ</button>
           </form>
         </div>
@@ -273,17 +329,17 @@
           <div class="footer-social">
             <ul class="footer-list list">
               <li class="footer-item">
-                <svg width="43.75" heigh="40">
+                <svg width="43.75" height="40">
                   <use href="./img/symbol-defs.svg#icon-vk"></use>
                 </svg>
               </li>
               <li class="footer-item">
-                <svg width="43.75" heigh="40">
+                <svg width="43.75" height="40">
                   <use href="./img/symbol-defs.svg#icon-vk"></use>
                 </svg>
               </li>
               <li class="footer-item">
-                <svg width="43.75" heigh="40">
+                <svg width="43.75" height="40">
                   <use href="./img/symbol-defs.svg#icon-vk"></use>
                 </svg>
               </li>

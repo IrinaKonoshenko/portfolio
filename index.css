@@ -47,6 +47,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
   right: 0;
   transition: border-color ease-in-out 0.3s;
   border-bottom: 1px solid #eeeff1;
@@ -129,6 +130,11 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.1em;
+  cursor: pointer;
+}
+.btn:active {
+  top: 1px;
+  position: relative;
 }
 
 .about-me {
@@ -273,11 +279,28 @@ body {
   margin: 0 auto;
 }
 
+.my-works-video-block {
+  position: relative;
+}
 .my-works-video {
   padding-top: 57px;
   padding-bottom: 100px;
   width: 1110px;
   height: 600px;
+}
+
+.my-works-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  cursor: pointer;
+  transition: transform ease-in-out 0.3s;
+}
+
+.my-works-play-btn:hover {
+  transform: scale(1.2);
 }
 
 .projects-picture {
@@ -292,6 +315,30 @@ body {
 
 .projects-item {
   width: calc(100% / 4);
+  position: relative;
+}
+
+.projects-hover {
+  fill: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    rgba(52, 84, 122, 0.8),
+    rgba(52, 84, 122, 0.8)
+  );
+  transition: opacity ease-in-out 0.3s;
+  opacity: 0;
+}
+.projects-hover:hover {
+  opacity: 1;
 }
 
 .clients-list {
@@ -327,15 +374,35 @@ body {
 }
 
 .form-content {
-  padding-top: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 65px;
+  align-items: center;
+}
+.form-double {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.form-double .form-input-wrapper {
+  width: 50%;
+}
+.form-input-wrapper {
+  width: 100%;
 }
 
 .form-input {
-  padding: 17px 161px 18px 20px;
+  padding: 17px 20px;
   border: none;
   font-size: 14px;
   line-height: 1.6;
   color: #5f5d5d;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .input-left {
@@ -345,11 +412,14 @@ body {
 .form-textarea {
   margin-top: 20px;
   border: none;
-  padding: 17px 438px 143px 20px;
+  padding: 17px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-btn {
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 .footer {
@@ -371,6 +441,7 @@ body {
 
 .footer-text {
   padding-top: 20px;
+  padding-bottom: 50px;
   font-size: 13px;
   line-height: 1.6;
   color: #fff;
